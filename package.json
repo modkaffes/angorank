@@ -1,0 +1,38 @@
+{
+  "name": "angorank",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:debug": "NODE_OPTIONS='--inspect' next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest",
+    "lint": "eslint .",
+    "format": "prettier --write './**/*.{ts,tsx,css,md,json}' --config ./.prettierrc"
+  },
+  "dependencies": {
+    "next": "^10.2.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^15.6.0",
+    "@types/react": "^17.0.5",
+    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "@typescript-eslint/parser": "^4.23.0",
+    "autoprefixer": "^10.2.5",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "postcss": "^8.3.0",
+    "prettier": "^2.3.0",
+    "tailwindcss": "^2.1.2",
+    "typescript": "^4.2.4"
+  }
+}
