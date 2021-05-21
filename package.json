@@ -12,6 +12,7 @@
     "format": "prettier --write './**/*.{ts,tsx,css,md,json}' --config ./.prettierrc"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.1",
     "next": "^10.2.2",
     "next-themes": "^0.0.14",
     "react": "17.0.2",
