@@ -6,6 +6,7 @@ import Router, { useRouter } from 'next/router';
 import fetch from 'node-fetch';
 
 import Table from 'components/Table';
+import TableCustomize from 'components/TableCustomize';
 import TopNav from 'components/TopNav';
 import { ICoin, ICoinsData } from 'utils/coins';
 
@@ -155,6 +156,7 @@ export default function Home({
           </div>
           <div className="flex justify-end gap-3">
             <SelectRowsButton perPage={perPage} />
+            <TableCustomize columns={columns} />
           </div>
         </div>
         <main className="mt-5">
