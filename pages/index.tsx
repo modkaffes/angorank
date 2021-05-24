@@ -93,12 +93,10 @@ function Pagination({ currentPage, totalPages }: { currentPage: number; totalPag
 export default function Home({
   supportedVSCurrenciesData,
   activeCryptocurrencies,
-  columns,
   currency,
   coinsData,
   perPage,
   page,
-  endpointOptions,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   const [coins, setCoins] = useState<ICoin[]>();
   const [totalPages, setTotalPages] = useState(0);
