@@ -234,19 +234,19 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   // Get/Initialize query params
   const {
     vs_currency: currency = 'usd',
-    page = 1,
+    page = '1',
     order = 'market_cap_desc',
-    per_page: perPage = 20,
+    per_page: perPage = '20',
     price_change_percentage: priceChangePercentage = '24h,7d',
   } = query;
 
   const response = await fetch(
     `${API_URL}/${formEndpoint({
-      currency,
-      page,
-      perPage,
-      priceChangePercentage,
-      order,
+      currency: currency as string,
+      page: page as string,
+      order: order as string,
+      perPage: perPage as string,
+      priceChangePercentage: priceChangePercentage as string,
     })}`
   );
   const coinsData: ICoinsData = await response.json();
