@@ -42,7 +42,7 @@ export default function CurrencySelector({
         <FlyOut
           title="Select currency"
           content={
-            <div className="grid grid-cols-6 gap-3 w-96">
+            <div className="grid gap-3 w-60 grid-cols-3 sm:grid-cols-6 sm:w-96">
               {currencies.map((currency) => {
                 // Compare using localCompare for case insensitivity
                 // eg. when user adds ETH instead of eth in query params

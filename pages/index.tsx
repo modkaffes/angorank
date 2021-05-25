@@ -77,8 +77,9 @@ function Pagination({ currentPage, totalPages }: { currentPage: number; totalPag
       initialPage={currentPage - 1}
       pageCount={totalPages}
       containerClassName={'py-3 flex items-center justify-center gap-3'}
+      breakClassName={'hidden sm:flex'}
       activeClassName={activeClassName}
-      pageClassName={liClassNames}
+      pageClassName={`${liClassNames} hidden sm:flex`}
       pageLinkClassName={aClassNames}
       previousClassName={liClassNames}
       previousLinkClassName={aClassNames}
@@ -144,10 +145,10 @@ export default function Home({
         <link rel="icon" sizes="192x192" href="/touch-icon-192x192.png" />
       </Head>
       <TopNav currency={currency} currencies={supportedVSCurrenciesData} isLoading={isLoading} />
-      <div className="px-4 py-10 mx-auto lg:max-w-screen-2xl">
+      <div className="px-4 py-4 sm:py-10 mx-auto lg:max-w-screen-2xl">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div className="flex-1 min-w-0">
-            <h1 className="text-2xl font-bold leading-7 sm:text-3xl sm:truncate">
+            <h1 className="text-l font-bold leading-7 sm:text-3xl sm:truncate">
               Top Cryptocurrency by Market Cap Today
             </h1>
           </div>
@@ -155,7 +156,7 @@ export default function Home({
             <SelectRowsButton perPage={perPage} />
           </div>
         </div>
-        <main className="mt-5">
+        <main className="mt-4 sm:mt-10">
           {coinsData.error && (
             <p className="text-red-600 dark:text-red-400">
               There was an error fetching data: {coinsData.error}

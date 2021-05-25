@@ -49,15 +49,13 @@ export default function Table({ coins, currency }: { coins: ICoin[]; currency: s
                 >
                   {coin.market_cap_rank}
                 </td>
-                <td
-                  className={`pl-0 pr-2 py-2 sticky left-8 sm:left-14 z-40 ${alternatingClassName}`}
-                >
+                <td className={`pl-0 py-2 sticky left-8 sm:left-14 z-40 ${alternatingClassName}`}>
                   <div className="flex items-center gap-3">
                     <div className="flex-shrink-0">
                       <img className="h-5 w-5 rounded-full" src={coin.image} alt={coin.name} />
                     </div>
                     <div>
-                      <p className="font-medium whitespace-nowrap">{coin.name}</p>
+                      <p className="font-medium">{coin.name}</p>
                       <p className="text-gray-500 dark:text-gray-400 uppercase text-xs">
                         {coin.symbol}
                       </p>
