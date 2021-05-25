@@ -77,8 +77,9 @@ function Pagination({ currentPage, totalPages }: { currentPage: number; totalPag
       initialPage={currentPage - 1}
       pageCount={totalPages}
       containerClassName={'py-3 flex items-center justify-center gap-3'}
+      breakClassName={'hidden sm:flex'}
       activeClassName={activeClassName}
-      pageClassName={liClassNames}
+      pageClassName={`${liClassNames} hidden sm:flex`}
       pageLinkClassName={aClassNames}
       previousClassName={liClassNames}
       previousLinkClassName={aClassNames}
