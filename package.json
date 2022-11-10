@@ -22,7 +22,7 @@
     "react-paginate": "^7.1.2"
   },
   "devDependencies": {
-    "@types/node": "^15.6.0",
+    "@types/node": "^18.11.9",
     "@types/node-fetch": "^2.5.10",
     "@types/react": "^17.0.5",
     "@types/react-paginate": "^7.1.0",
