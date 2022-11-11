@@ -1,4 +1,4 @@
-import { RefreshIcon } from '@heroicons/react/outline';
+import { ArrowPathIcon } from '@heroicons/react/24/outline';
 import useMounted from 'hooks/useMounted';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
@@ -60,7 +60,7 @@ export default function TopNav({
           {isLoading && (
             <>
               <span className="sr-only">Loading data…</span>
-              <RefreshIcon aria-hidden className="animate-spin h-5 w-5" />
+              <ArrowPathIcon aria-hidden className="animate-spin h-5 w-5" />
             </>
           )}
           <div className="flex items-center justify-end gap-x-4 sm:gap-x-6">

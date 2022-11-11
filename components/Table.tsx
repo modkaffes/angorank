@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/outline';
+import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline';
 
 import { ICoin } from 'utils/coins';
 import { classNames as cx, formatCurrency } from 'utils/misc';

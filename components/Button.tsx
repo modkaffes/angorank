@@ -1,5 +1,5 @@
 import { SyntheticEvent } from 'react';
-import { ChevronDownIcon } from '@heroicons/react/outline';
+import { ChevronDownIcon } from '@heroicons/react/24/outline';
 
 import { classNames as cx } from 'utils/misc';
 

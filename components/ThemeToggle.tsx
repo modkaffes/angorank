@@ -1,4 +1,4 @@
-import { MoonIcon, SunIcon } from '@heroicons/react/outline';
+import { MoonIcon, SunIcon } from '@heroicons/react/24/outline';
 import useMounted from 'hooks/useMounted';
 import { useTheme } from 'next-themes';
 
