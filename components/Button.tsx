@@ -1,5 +1,5 @@
 import { SyntheticEvent } from 'react';
-import { ChevronDownIcon } from '@heroicons/react/outline';
+import { ChevronDownIcon } from '@heroicons/react/24/outline';
 
 import { classNames as cx } from 'utils/misc';
 
@@ -38,7 +38,7 @@ export default function Button({
     <button className={classNames} {...props}>
       {icon}
       {children}
-      {caret && <ChevronDownIcon className="h-4 w-4 flex-shrink-0 text-gray-400" />}
+      {caret && <ChevronDownIcon className="h-4 w-4 shrink-0 text-gray-400" />}
     </button>
   );
 }

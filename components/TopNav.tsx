@@ -1,6 +1,7 @@
-import { RefreshIcon } from '@heroicons/react/outline';
+import { ArrowPathIcon } from '@heroicons/react/24/outline';
 import useMounted from 'hooks/useMounted';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useTheme } from 'next-themes';
 
 import CurrencySelector from 'components/CurrencySelector';
@@ -8,7 +9,7 @@ import ThemeToggle from 'components/ThemeToggle';
 
 function GitHub() {
   return (
-    <a
+    <Link
       href="https://github.com/modkaffes/angorank"
       className="focus:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 dark:focus:text-gray-400"
     >
@@ -19,7 +20,7 @@ function GitHub() {
           fillRule="evenodd"
         />
       </svg>
-    </a>
+    </Link>
   );
 }
 
@@ -28,14 +29,14 @@ function Logo() {
   const { theme } = useTheme();
 
   return !mounted ? null : (
-    <a href="/" className="flex">
+    <Link href="/" className="flex">
       <span className="sr-only">Angorank</span>
       {theme === 'light' ? (
         <Image src="/images/angorank-dark.svg" alt="Angorank" width={180} height={32} />
       ) : (
         <Image src="/images/angorank-light.svg" alt="Angorank" width={180} height={32} />
       )}
-    </a>
+    </Link>
   );
 }
 
@@ -53,14 +54,14 @@ export default function TopNav({
       <div className="px-4 mx-auto lg:max-w-screen-2xl">
         <div className="flex items-center justify-between h-16">
           <div className="flex">
-            <div className="flex-shrink-0 flex items-center">
+            <div className="shrink-0 flex items-center">
               <Logo />
             </div>
           </div>
           {isLoading && (
             <>
               <span className="sr-only">Loading data…</span>
-              <RefreshIcon aria-hidden className="animate-spin h-5 w-5" />
+              <ArrowPathIcon aria-hidden className="animate-spin h-5 w-5" />
             </>
           )}
           <div className="flex items-center justify-end gap-x-4 sm:gap-x-6">
