@@ -223,9 +223,9 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   const API_URL = 'https://api.coingecko.com/api/v3';
 
   // Get total currencies count to calculate pages
-  const resGlobal = await fetch(`${API_URL}/global`);
-  const globalData = await resGlobal.json();
-  const activeCryptocurrencies = globalData.data.active_cryptocurrencies;
+  const res = await fetch(`${API_URL}/global`);
+  const { data } = await res.json();
+  const activeCryptocurrencies = data?.active_cryptocurrencies;
 
   // Get supported currencies for display
   const resSupportedVSCurrencies = await fetch(`${API_URL}/simple/supported_vs_currencies`);
