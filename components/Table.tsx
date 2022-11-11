@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline';
+import Image from 'next/image';
 
 import { ICoin } from 'utils/coins';
 import { classNames as cx, formatCurrency } from 'utils/misc';
@@ -52,7 +53,13 @@ export default function Table({ coins, currency }: { coins: ICoin[]; currency: s
                 <td className={`pl-0 py-2 sticky left-8 sm:left-14 z-40 ${alternatingClassName}`}>
                   <div className="flex items-center gap-3">
                     <div className="shrink-0">
-                      <img className="h-5 w-5 rounded-full" src={coin.image} alt={coin.name} />
+                      <Image
+                        className="h-6 w-6 rounded-full"
+                        src={coin.image}
+                        alt={coin.name}
+                        width={48}
+                        height={48}
+                      />
                     </div>
                     <div>
                       <p className="font-medium">{coin.name}</p>
