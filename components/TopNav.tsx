@@ -53,7 +53,7 @@ export default function TopNav({
       <div className="px-4 mx-auto lg:max-w-screen-2xl">
         <div className="flex items-center justify-between h-16">
           <div className="flex">
-            <div className="flex-shrink-0 flex items-center">
+            <div className="shrink-0 flex items-center">
               <Logo />
             </div>
           </div>

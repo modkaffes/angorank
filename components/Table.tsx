@@ -51,7 +51,7 @@ export default function Table({ coins, currency }: { coins: ICoin[]; currency: s
                 </td>
                 <td className={`pl-0 py-2 sticky left-8 sm:left-14 z-40 ${alternatingClassName}`}>
                   <div className="flex items-center gap-3">
-                    <div className="flex-shrink-0">
+                    <div className="shrink-0">
                       <img className="h-5 w-5 rounded-full" src={coin.image} alt={coin.name} />
                     </div>
                     <div>
