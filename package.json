@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "test": "jest",
-    "lint": "eslint .",
+    "lint": "next lint",
     "format": "prettier --write './**/*.{ts,tsx,css,md,json}' --config ./.prettierrc"
   },
   "dependencies": {
@@ -30,6 +30,7 @@
     "@typescript-eslint/parser": "^5.42.1",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.27.0",
+    "eslint-config-next": "^13.0.3",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
