@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.13",
-    "next": "^12.3.3",
+    "next": "^13.0.3",
     "next-themes": "^0.2.1",
     "node-fetch": "^3.3.0",
     "react": "^18.2.0",
