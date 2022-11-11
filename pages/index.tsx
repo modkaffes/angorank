@@ -3,7 +3,6 @@ import ReactPaginate from 'react-paginate';
 import { GetServerSideProps, InferGetServerSidePropsType } from 'next';
 import Head from 'next/head';
 import Router, { useRouter } from 'next/router';
-import fetch from 'node-fetch';
 
 import Table from 'components/Table';
 import TopNav from 'components/TopNav';
